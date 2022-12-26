@@ -11,7 +11,9 @@ const chatServer = (server) => {
     origins: "http://localhost:8080:*",
   });
 
-  ioServer.on("connection", (socket) => {
+  const chatIO = ioServer.of("/chat");
+
+  chatIO.on("connection", (socket) => {
     console.log("A user connected");
     joinRoomEvent(socket);
     leaveRoomEvent(socket);
