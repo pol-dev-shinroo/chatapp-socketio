@@ -4,4 +4,4 @@
 - real-time communication using socket protocol 
 - JWT token (login + signup) 
 - React => typescript + tailwind + JEST testing 
-![image](https://user-images.githubusercontent.com/102004753/209517772-96768fd6-c49c-4d90-9f54-5fd7ad2f081d.png)
+![image](https://user-images.githubusercontent.com/102004753/209517886-dd6a234d-d129-4812-8b12-4b31c8fce98f.png)
