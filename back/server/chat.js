@@ -13,6 +13,10 @@ const chatServer = (server) => {
 
   const chatIO = ioServer.of("/chat");
 
+  chatIO.engine.generateId = (req) => {
+    return uuid.v4(); // must be unique across all Socket.IO servers
+  };
+
   chatIO.on("connection", (socket) => {
     console.log("A user connected");
     joinRoomEvent(socket);
